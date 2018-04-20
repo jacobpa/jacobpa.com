@@ -1,0 +1,36 @@
+!!! 5
+
+%html
+  %head
+    %meta{'charset' => 'utf-8'}
+    %title= current_page.data.title + ' | Jacob Patterson' || 'Jacob Patterson'
+    = stylesheet_link_tag "site"
+  %body
+    %section.hero.is-primary
+      .hero-body.is-centered
+        .container
+          %h1.title Jacob Patterson
+          %h2.subtitle Computer & Information Science Student Creating Things
+    %nav.navbar.is-primary
+      .container
+        .navbar-brand
+          %h4.title.is-4.navbar-item.is-marginless= current_page.data.title
+          .navbar-burger
+            %span
+            %span
+            %span
+        .navbar-menu
+          .navbar-end
+            = link_to 'Home', '/index.html', class: 'navbar-item'
+            = link_to 'Projects', '/projects.html', class: 'navbar-item'
+            .navbar-item.has-dropdown.is-hoverable
+              %a.navbar-link Find Me
+
+              .navbar-dropdown
+                = link_to 'LinkedIn', '#', class: 'navbar-item'
+                = link_to 'Twitter', '#', class: 'navbar-item'
+                = link_to 'Github', '#', class: 'navbar-item'
+    
+    = yield
+
+    = javascript_include_tag 'site'
