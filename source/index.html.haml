@@ -5,7 +5,33 @@ title: About Me
 .section
   .container
     .columns
-      .column.is-4
-        = lorem.paragraphs 2
+      .column.is-4.has-text-centered
+        %figure.is-hidden-touch
+          %div= image_tag 'jacob.jpg', resize_to: 300
+        .contact-info
+          %table.table
+            %thead
+              %tr
+                %th.has-text-centered{colspan: "2"} Contact Info
+            %tr
+              %td Email: 
+              %td= mail_to 'jacob@jacobpa.com', 'jacob@jacobpa.com'
+            %tr
+              %td LinkedIn:
+              %td= link_to 'LinkedIn Profile', 'https://www.linkedin.com/in/jacobpa'
+            %tr
+              %td Github:
+              %td= link_to 'Github Profile', 'https://www.github.com/jacobpa'
       .column
-        = lorem.paragraphs 3
+        %content.about-me
+          %p 
+            Hello, my name is Jacob Patterson, and I am currently a fourth year student at The Ohio
+            State University studying for my bachelor's degree in Computer & Information Science. I 
+            am specializing in software engineering and databases within my major, and am also
+            studying for a minor in the Russian language. I plan to graduate in the winter of 2019.
+          %p
+            My interests lie in creating user-facing solutions to exciting and interesting problems.
+            I possess classroom experience creating webapps, excerising knowledge pertaining to web
+            development and design, including HTML/CSS, Javascript, Ruby on Rails, and light database
+            management. I am also familiar with and have used several different languages such as 
+            Python and Java for various personal and course projects. 

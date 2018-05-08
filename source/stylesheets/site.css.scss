@@ -1,4 +1,18 @@
+/* Import and modify bulma settings */
 $primary: #70A2D3;
 
-@import "bulma/bulma.sass";
+@import "bulma/bulma";
 
+/* Custom styles */
+img.about-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-info table {
+    margin: 0 auto;
+}
+
+.about-me p {
+    margin-bottom: 1em;
+}
