@@ -5,4 +5,4 @@ document.querySelector('.navbar-burger').addEventListener("click", function(){
     } else {
         menu.className = 'navbar-menu';
     }
-})
+});

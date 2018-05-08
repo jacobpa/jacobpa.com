@@ -1,0 +1,56 @@
+---
+title: Projects
+---
+
+.section
+  .container
+    .columns
+      .column
+        .card
+          %header.card-header
+            %p.card-header-title jacobpa.com
+          .card-content
+            .content
+              This website is written in Ruby using #{link_to 'Middleman', 'https://middlemanapp.com/'}
+              to generate a static website. It uses #{link_to 'Bulma', 'https://bulma.io/'} for it's
+              CSS framework, with a few very minor stylistic tweaks. It uses minimal vanilla Javascript
+              as well.
+          %footer.card-footer
+            = link_to 'View on Github', 'https://github.com/jacobpa/jacobpa.com', class: 'card-footer-item'
+      .column
+        .card
+          %header.card-header
+            %p.card-header-title ChatPhrase
+          .card-content
+            .content
+              ChatPhrase is a project which aims to implement the functionality of 
+              #{link_to 'Hasbro\'s CatchPhrase', 'https://en.wikipedia.org/wiki/Catch_Phrase_(game)'}
+              in the form of a #{link_to 'Discord', 'https://discordapp.com/'} bot.
+
+              %hr
+
+              It is written in Python, and uses the #{link_to 'Datamuse API', 'https://www.datamuse.com/api/'}
+              to get words related to a topic, and #{link_to 'discord.py', 'https://github.com/Rapptz/discord.py'}
+              in order to interface with the Discord API.
+          %footer.card-footer
+            = link_to 'View on Github', 'https://github.com/jacobpa/ChatPhrase', class: 'card-footer-item'
+      .column
+        .card
+          %header.card-header
+            %p.card-header-title Expiring Patents
+          .card-content
+            .content
+              Expiring Patents is a Twitter bot which tweets out patents that have potentially expired
+              recently, assuming the patent was filed after 1995 using the rules 
+              #{link_to 'outlined here', 'https://en.wikipedia.org/wiki/Term_of_patent_in_the_United_States'}.
+              It tweets a title, truncated as necessary, corresponding to the patent as well as a link
+              with more detailed information regarding the patent.
+
+              %hr
+
+              It is written in Python, and uses the #{link_to 'PatentsView API', 'http://www.patentsview.org/api/'}
+              to fetch a list of patents filed twenty years from the current day, and 
+              #{link_to 'Google Patents', 'https://patents.google.com/'} to build a link that followers
+              of the bot can use to find more about the patent.
+          %footer.card-footer
+            = link_to 'View on Github', 'https://github.com/jacobpa/twitter-bots/tree/master/expiring-patents', class: 'card-footer-item'
