@@ -4,37 +4,43 @@ title: Projects
 
 .section
   .container
-    .columns
-      .column
+    .columns.is-multiline
+      .column.is-4
         .card
           %header.card-header
-            %p.card-header-title jacobpa.com
+            %p.card-header-title subreddit-mirror
           .card-content
             .content
-              This website is written in Ruby using #{link_to 'Middleman', 'https://middlemanapp.com/'}
-              to generate a static website. It uses #{link_to 'Bulma', 'https://bulma.io/'} for it's
-              CSS framework, with a few very minor stylistic tweaks. It uses minimal vanilla Javascript
-              as well.
-          %footer.card-footer
-            = link_to 'View on GitHub', 'https://github.com/jacobpa/jacobpa.com', class: 'card-footer-item'
-      .column
-        .card
-          %header.card-header
-            %p.card-header-title ChatPhrase
-          .card-content
-            .content
-              ChatPhrase is a project which aims to implement the functionality of 
-              #{link_to 'Hasbro\'s CatchPhrase', 'https://en.wikipedia.org/wiki/Catch_Phrase_(game)'}
-              in the form of a #{link_to 'Discord', 'https://discordapp.com/'} bot.
+              subreddit-mirror is a command line utility written in Python designed to make bot development for Reddit easier.
+              It copies a specified number of posts and (optionally) comments from one subreddit to another. This utility allows
+              developers to test bots right on reddit.com without having to worry about setting up mocks, manually creating dummy
+              posts in their own private subreddit, or creating spam on the website.
 
               %hr
 
-              It is written in Python, and uses the #{link_to 'Datamuse API', 'https://www.datamuse.com/api/'}
-              to get words related to a topic, and #{link_to 'discord.py', 'https://github.com/Rapptz/discord.py'}
-              in order to interface with the Discord API.
+              This utility is written in Python, and uses #{link_to 'PRAW', 'https://github.com/praw-dev/praw'} to interface with the
+              #{link_to 'Reddit API', 'https://www.reddit.com/dev/api/'} to read and create posts. This project also proved useful for
+              learning Python package creation and distribution.
           %footer.card-footer
-            = link_to 'View on GitHub', 'https://github.com/jacobpa/ChatPhrase', class: 'card-footer-item'
-      .column
+            = link_to 'View on GitHub', 'https://github.com/jacobpa/subreddit-mirror', class: 'card-footer-item'
+      .column.is-4
+        .card
+          %header.card-header
+            %p.card-header-title Photoclash
+          .card-content
+            .content
+              Photoclash is a social media website where users can upload photos, comment on photos, and vote on photos sitewide
+              in order to find which photos are most popular on the website. This was the final project for OSU's CSE 3901: Web Applications,
+              where I worked in a group of six to complete a full-fledged web application in Ruby and Rails.
+
+              %hr
+
+              This project utilized #{link_to 'Ruby on Rails', 'https://rubyonrails.org/'} and #{link_to 'SQLite', 'https://www.sqlite.org/index.html'},
+              as well as several gems such as #{link_to 'Devise', 'https://github.com/plataformatec/devise'} and #{link_to 'Paperclip', 'https://github.com/thoughtbot/paperclip'}.
+              Additionally, this project provided experience working as a team to develop a final product in an agile environment.
+          %footer.card-footer
+            %em.card-footer-item Source not available.
+      .column.is-4
         .card
           %header.card-header
             %p.card-header-title Expiring Patents
@@ -54,4 +60,32 @@ title: Projects
               of the bot can use to find more about the patent.
           %footer.card-footer
             = link_to 'View on GitHub', 'https://github.com/jacobpa/twitter-bots/tree/master/expiring-patents', class: 'card-footer-item'
-    .columns
+      .column.is-4
+        .card
+          %header.card-header
+            %p.card-header-title jacobpa.com
+          .card-content
+            .content
+              This website is written in Ruby using #{link_to 'Middleman', 'https://middlemanapp.com/'}
+              to generate a static website. It uses #{link_to 'Bulma', 'https://bulma.io/'} for it's
+              CSS framework, with a few very minor stylistic tweaks. It uses minimal vanilla Javascript
+              as well.
+          %footer.card-footer
+            = link_to 'View on GitHub', 'https://github.com/jacobpa/jacobpa.com', class: 'card-footer-item'
+      .column.is-4
+        .card
+          %header.card-header
+            %p.card-header-title ChatPhrase
+          .card-content
+            .content
+              ChatPhrase is a project which aims to implement the functionality of 
+              #{link_to 'Hasbro\'s CatchPhrase', 'https://en.wikipedia.org/wiki/Catch_Phrase_(game)'}
+              in the form of a #{link_to 'Discord', 'https://discordapp.com/'} bot.
+
+              %hr
+
+              It is written in Python, and uses the #{link_to 'Datamuse API', 'https://www.datamuse.com/api/'}
+              to get words related to a topic, and #{link_to 'discord.py', 'https://github.com/Rapptz/discord.py'}
+              in order to interface with the Discord API.
+          %footer.card-footer
+            = link_to 'View on GitHub', 'https://github.com/jacobpa/ChatPhrase', class: 'card-footer-item'
