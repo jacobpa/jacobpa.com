@@ -1,5 +1,3 @@
-::Sass.load_paths << File.join(root, "node_modules")
-
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 

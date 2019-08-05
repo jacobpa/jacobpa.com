@@ -1,7 +1,7 @@
 /* Import and modify bulma settings */
 $primary: #70A2D3;
 
-@import "bulma/bulma";
+@import "../../node_modules/bulma/bulma";
 
 /* Custom styles */
 img.about-image {
@@ -20,3 +20,4 @@ img.about-image {
 .card-content hr {
     margin: .5em 0;
 }
+
